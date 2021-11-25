@@ -1,0 +1,22 @@
+
+
+
+<h2>PEDIDO FRUTA</h2>
+
+<form (ngSubmit)="agregar()">
+
+
+
+
+    <label for="nombre"></label>
+    <input type="text" name="nombre" id="nombre" placeholder="Fruta deseada"
+    [(ngModel)]="nuevaFruta.nombre"
+    >
+    
+    <label for="cantidad"></label>
+    <input type="number" name="cantidad" id="cantidad" 
+    placeholder="Peso en gramos" [(ngModel)]="nuevaFruta.cantidad">
+    
+
+    <input type="submit" value="Añadir">
+</form>
